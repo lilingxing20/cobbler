@@ -1,0 +1,3 @@
+# hostname    ipmi          interface1 mac1              ip1            gateway1       interface2 ip2            gateway2       interface3 ip3           gateway3       interface4 ip4          gateway4      
+  test2       -             enp0s3     08:00:27:96:90:46 10.200.0.171   10.200.0.254   enp0s8     172.17.0.171   172.17.0.254   enp0s9     172.18.0.171  172.18.0.254   enp0s10    172.19.0.171 172.19.0.254
+  test        -             enp0s3     08:00:27:BE:F1:E6 10.200.0.172   10.200.0.254   enp0s8     172.17.0.172   172.17.0.254   enp0s9     172.18.0.172  172.18.0.254   enp0s10    172.19.0.172 172.19.0.254
