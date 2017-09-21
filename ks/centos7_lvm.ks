@@ -29,6 +29,7 @@ network  --nameserver=114.114.114.114
 network  --hostname=$hostname
 
 # Root password 123456
+#  by openssl passwd -1 or python -c 'import crypt; print(crypt.crypt("MyPassword"))'
 # rootpw --iscrypted $6$qFpo5Mosja1IrZoJ$sgsSDXZrA7VHUiIgMNG9kVmTTn22wAPcW/ENvEDVuxwCN/9JnpgfHp51/UJtwsxMonkBY1tZZxJrCNx48mmB9.
 rootpw --iscrypted $default_password_crypted
 # System services
@@ -41,7 +42,7 @@ bootloader --append=" crashkernel=auto" --location=mbr --boot-drive=$disk
 clearpart --all --initlabel --drives=$disk
 # Disk partitioning information
 autopart --type=lvm
-
+# Reboot after installation
 reboot
 
 %packages

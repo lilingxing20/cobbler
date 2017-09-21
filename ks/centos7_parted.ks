@@ -29,6 +29,7 @@ network  --nameserver=114.114.114.114
 network  --hostname=$hostname
 
 # Root password 123456
+#  by openssl passwd -1 or python -c 'import crypt; print(crypt.crypt("MyPassword"))'
 # rootpw --iscrypted $6$FuWOYZxJrZtszABI$SmHxJGvqMnxeWE/RnA4XNuLPOmohiHo4ALXEieKv.hijP9dk/82e5WZHQCsABBUhXeB0zKNfOGuyrGh.ov.oD1
 rootpw --iscrypted $default_password_crypted
 # System services
@@ -44,7 +45,7 @@ part /boot --fstype="xfs" --ondisk=sda --size=500
 part /home --fstype="xfs" --ondisk=sda --size=26249
 part swap --fstype="swap" --ondisk=sda --size=3969
 part / --fstype="xfs" --ondisk=sda --size=51200
-
+# Reboot after installation
 reboot
 
 %packages
